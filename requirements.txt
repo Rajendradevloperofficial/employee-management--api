@@ -7,5 +7,7 @@ sqlparse==0.5.5
 tzdata==2025.3
 gunicorn
 django-filter
+djangorestframework-simplejwt
+
 
 
