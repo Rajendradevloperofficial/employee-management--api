@@ -61,6 +61,12 @@ POST /api/token/
 # example like 
 # Create Employee
 POST /api/employees/
+{
+    "name":"Rajendra Gupta",
+    "email":"rg712489@gmail.com",
+    "department":"software engineer",
+    "role":"Python developer"
+}
 # get data for employee and filter and pagination
 GET /api/employees/
 GET /api/employees/?page=2
@@ -72,3 +78,10 @@ PUT /api/employees/{id}/
 DELETE /api/employees/{id}/
 # if  Running Tests
 python manage.py test employees
+# if live deploy services in test so this like .
+POST https://employee-management-api-production-39d2.up.railway.app/api/token/
+{
+    "username":"Rajendra",
+    "password":"admin@123"
+}
+
